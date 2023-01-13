@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //input
+    int n, a[n], count = 0, b;
+    cin >> n;
+    // entering the array
+    for(int i= 0; i <= n; i++)
+    {
+        cin>>a[i];
+    }
+    //counting and adding the sums for array, and in the count, i am adding the the no. with which it should be added to
+    for(int i= 0; i <= n; i++)
+    {
+        b += a[i];
+        count += i;
+    }
+    
+    // subtracting them
+    count = count - b;
+    //printng out
+    cout<<count<<endl;
+}
