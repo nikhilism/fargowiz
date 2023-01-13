@@ -7,19 +7,19 @@ int main()
     //input
     int n, count = 0;
     cin >> n;
-    int rem, reverse = 0;
+    int rem, reverse = 0, temp = n;
     
     // reversing the num starting from behind, and then adding it to the reverse variable
-    while(num > 1)
+    while(temp > 0)
     {
-        rem = num%10;
+        rem = temp%10;
         reverse = reverse*10 + rem;
-        num = num/10;
+        temp = temp/10;
     }
     // checking if it is palindrome and printing the answer
-    if(reverse == num)
+    if(reverse == n)
     {
-        cout<<True<<endl;
+        cout<<"True"<<endl;
     }
-    else cout<<False<<endl;
+    else cout<<"False"<<endl;
 }
