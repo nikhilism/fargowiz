@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    //input
+    int n, count = 0;
+    cin >> n;
+    int rem, reverse = 0;
+    
+    // reversing the num starting from behind, and then adding it to the reverse variable
+    while(num > 1)
+    {
+        rem = num%10;
+        reverse = reverse*10 + rem;
+        num = num/10;
+    }
+    // checking if it is palindrome and printing the answer
+    if(reverse == num)
+    {
+        cout<<True<<endl;
+    }
+    else cout<<False<<endl;
+}
